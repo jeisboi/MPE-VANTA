@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease all;
+    font-family: "martian mano", "romanesco";
+}
+
+
+body {
+    background-color: white;
+}
+
+.container {
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-image: url('pkm.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box {
+    width: 256px;
+    padding: 20px;
+    color: white;
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px black;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.ball {
+    display: none;
+}
+
+.ball {
+    width: 32px;
+}
+
+.ball img {
+    width: 100%;
+}
+
+.box .name {
+    display: none;
+}
+
+.box .type1, .box .type2 {
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#poke1 {
+    background-color: goldenrod;
+}
+#poke2 {
+    background-color: greenyellow;
+}
+#poke3 {
+    background-color: aqua;
+}
+#poke4 {
+    background-color: burlywood;
+}
+#poke5 {
+    background-color: peachpuff;
+}
+#poke6 {
+    background-color: brown;
+}
+#poke7 {
+    background-color: gold;
+}
+#poke8 {
+    background-color: violet;
+}
+#poke9 {
+    background-color: skyblue;
+}
+#poke10 {
+    background-color: purple;
+}
+#poke11{
+    background-color: tan;
+}
+#poke12{
+    background-color: cornflowerblue;
+}
+
+@media (max-width: 950px) {
+    .container {
+        flex-direction: column;
+        background-position: left top;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .box img {
+        width: 128px;
+    }
+
+    .box .name {
+        display: block;
+    }
+
+    .type1, .type2 {
+        display: none;
+    }
+
+    .box .ball {
+        display: contents;
+    }
+
+    .ball img {
+        width: 64px;
+    }
+
+    .box .name {
+        font-size: 3rem;
+    }
+
+    .box:hover {
+        background-image: url("fight.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box:hover .name,
+    .box:hover .type1,
+    .box:hover .type2,
+    .box:hover .ball {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .ball img {
+        display: none;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .box img {
+        width: 256px;
+    }
+
+    .box .name {
+        font-size: 2.5rem;
+    }
+
+    .box:hover {
+        background-image: url("fight.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box:hover .name,
+    .box:hover .type1,
+    .box:hover .type2,
+    .box:hover .pokeball {
+        display: block;
+    }
+}
